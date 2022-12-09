@@ -24,14 +24,14 @@ const Home = () => {
 						}}
 						placeholder= "What should i do now?"> </input>
 					</li>
-					 {ToDos.map((item, index)=> (<li>{item}{""} <i class="basurar"   onClick={() => setToDos(ToDos.filter((T, currentIndex) => index != currentIndex ))
-					 </i>
-					 }</li>}</ul>	 
-						)
-					 }
-			   </ul>				   
-		</div>   
+					 {ToDos.map((item, index)=> 
+					 <li>{item}{""} <i class="basurar"   onClick={() => setToDos(ToDos.filter((T, currentIndex) => index != currentIndex ))
+					 }></i>
+				 </li> 				
+				)}
+			</ul>				   
 	     <div>[ToDos.length] task </div>	
+		</div>  
     	);
 	};				
  export default Home;
